@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Kirya Frota</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap');
+
+  :root {
+    --navy: #0A0E1A;
+    --navy2: #0F1420;
+    --cyan: #00E5FF;
+    --purple: #B388FF;
+    --text: #E8ECF4;
+    --muted: #8A93A8;
+    --border: rgba(0,229,255,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--navy);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  header {
+    background: var(--navy2);
+    border-bottom: 1px solid var(--border);
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .logo-k {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, var(--cyan), var(--purple));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--navy);
+  }
+
+  .logo-text {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    background: linear-gradient(90deg, var(--cyan), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .last-update {
+    display: inline-block;
+    background: rgba(0,229,255,0.08);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 12px;
+    color: var(--cyan);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--text) 60%, var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .intro {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--cyan);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(var(--cyan), var(--purple));
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
+  ul li {
+    color: var(--muted);
+    font-size: 15px;
+    padding: 6px 0 6px 20px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--cyan);
+    font-size: 13px;
+  }
+
+  .highlight-box {
+    background: rgba(0,229,255,0.05);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+
+  .highlight-box p {
+    margin: 0;
+    color: var(--text);
+    font-size: 14px;
+  }
+
+  .contact-box {
+    background: linear-gradient(135deg, rgba(0,229,255,0.08), rgba(179,136,255,0.08));
+    border: 1px solid rgba(179,136,255,0.25);
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 48px;
+    text-align: center;
+  }
+
+  .contact-box h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .contact-box p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  footer span {
+    color: var(--cyan);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo-k">K</div>
+    <div class="logo-text">Kirya Frota</div>
+  </div>
+  <div class="subtitle">Gestão de Frota Profissional</div>
+</header>
+
+<main>
+  <div class="last-update">Atualizado em maio de 2026</div>
+
+  <h1>Política de Privacidade</h1>
+
+  <p class="intro">
+    Esta Política de Privacidade descreve como o aplicativo Kirya Frota coleta, 
+    usa e protege as informações dos usuários. Ao utilizar o aplicativo, você 
+    concorda com os termos descritos neste documento.
+  </p>
+
+  <section>
+    <h2>1. Informações que coletamos</h2>
+    <p>O Kirya Frota coleta apenas as informações que você mesmo insere no aplicativo:</p>
+    <ul>
+      <li>Dados de veículos da sua frota (placa, modelo, tipo)</li>
+      <li>Registros de abastecimento (quilometragem, litros, preço, data)</li>
+      <li>Nome dos motoristas informados nos abastecimentos</li>
+      <li>Dados do tanque estacionário (saldo e histórico)</li>
+      <li>Nome da empresa configurado nas preferências</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. Como usamos as informações</h2>
+    <p>Todas as informações coletadas são utilizadas exclusivamente para:</p>
+    <ul>
+      <li>Gerar relatórios e dashboards dentro do próprio aplicativo</li>
+      <li>Calcular custos e consumo de combustível</li>
+      <li>Emitir vouchers de abastecimento</li>
+      <li>Permitir backup e restauração dos seus dados</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p>✓ Nenhum dado é enviado para servidores externos. Todas as informações ficam armazenadas localmente no seu dispositivo.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Armazenamento dos dados</h2>
+    <p>
+      Os dados do Kirya Frota são armazenados localmente no dispositivo do usuário 
+      utilizando o sistema de armazenamento seguro do Android (SharedPreferences). 
+      Não mantemos servidores próprios nem armazenamos dados em nuvem.
+    </p>
+    <p>
+      O usuário tem total controle sobre seus dados, podendo exportar, importar 
+      ou apagar todas as informações a qualquer momento pelas configurações do aplicativo.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. Compartilhamento de dados</h2>
+    <p>
+      O Kirya Frota não compartilha, vende, aluga nem transfere seus dados 
+      pessoais para terceiros em nenhuma hipótese.
+    </p>
+    <p>
+      A única funcionalidade de compartilhamento disponível é o export de backup 
+      e relatórios em PDF, que é realizado pelo próprio usuário através dos 
+      aplicativos de sua escolha (WhatsApp, e-mail, etc.).
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Permissões do aplicativo</h2>
+    <p>O Kirya Frota solicita as seguintes permissões:</p>
+    <ul>
+      <li>Bluetooth — para conexão com impressora térmica de vouchers</li>
+      <li>Internet — para consultar cotações de dólar e euro em tempo real</li>
+      <li>Armazenamento — para salvar arquivos de backup e relatórios PDF</li>
+    </ul>
+    <p>Nenhuma permissão é utilizada para coleta de dados pessoais.</p>
+  </section>
+
+  <section>
+    <h2>6. Segurança</h2>
+    <p>
+      O acesso ao aplicativo é protegido por login com usuário e senha 
+      definidos pelo próprio usuário. Recomendamos manter suas credenciais 
+      em segurança e não compartilhá-las com terceiros.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Direitos do usuário</h2>
+    <p>Você tem o direito de:</p>
+    <ul>
+      <li>Acessar todos os seus dados a qualquer momento</li>
+      <li>Exportar seus dados em formato de backup</li>
+      <li>Apagar todos os seus dados desinstalando o aplicativo</li>
+      <li>Solicitar esclarecimentos sobre esta política</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Alterações nesta política</h2>
+    <p>
+      Podemos atualizar esta Política de Privacidade periodicamente. 
+      Recomendamos que você revise esta página ocasionalmente para 
+      se manter informado sobre quaisquer alterações. As mudanças 
+      entram em vigor imediatamente após a publicação nesta página.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Conformidade com a LGPD</h2>
+    <p>
+      O Kirya Frota está em conformidade com a Lei Geral de Proteção de 
+      Dados (Lei nº 13.709/2018). Como o aplicativo não coleta nem 
+      transmite dados pessoais para servidores externos, o risco de 
+      exposição de dados é mínimo.
+    </p>
+  </section>
+
+  <div class="contact-box">
+    <h3>Dúvidas ou solicitações?</h3>
+    <p>Entre em contato pelo e-mail do desenvolvedor do aplicativo.<br>
+    Responderemos em até 5 dias úteis.</p>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 <span>Kirya Frota</span> — Todos os direitos reservados
+</footer>
+
+</body>
+</html>
