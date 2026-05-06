@@ -1,0 +1,60 @@
+name: kirya_frota
+description: "Kirya Frota - controle de combustivel, manutencao, pneus e relatorios."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  # Armazenamento local
+  shared_preferences: ^2.2.2
+
+  # Datas e formatação
+  intl: ^0.19.0
+
+  # PDF
+  pdf: ^3.10.7
+  printing: ^5.11.1
+
+  # Sistema de arquivos
+  path_provider: ^2.1.1
+
+  # Internet (cotação dólar/euro)
+  http: ^1.2.0
+
+  # Backup (compartilhar e importar)
+  share_plus: ^10.1.2
+  file_picker: ^8.1.4
+
+  # Gráficos do Dashboard
+  fl_chart: ^0.66.2
+
+  # Impressão térmica Bluetooth
+  print_bluetooth_thermal: ^1.1.1
+  esc_pos_utils_plus: ^2.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon.png
+    - assets/dados_iniciais.json
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
+  min_sdk_android: 21

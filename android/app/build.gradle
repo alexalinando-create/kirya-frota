@@ -1,0 +1,48 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.kiryafrota.gestorfrota"
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.kiryafrota.gestorfrota"
+        minSdkVersion flutter.minSdkVersion
+        targetSdk = 36
+        versionCode = 1
+        versionName = "1.0.0"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias = "kirya"
+            keyPassword = "SUA_SENHA_AQUI"
+            storeFile = file("kirya-frota.jks")
+            storePassword = "SUA_SENHA_AQUI"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
